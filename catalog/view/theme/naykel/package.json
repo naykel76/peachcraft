@@ -1,0 +1,19 @@
+{
+    "name": "nk_opencart",
+    "description": "NAYKEL Opencart Template",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": {
+        "type": "git"
+    },
+    "scripts": {
+        "watch": "sass --watch --no-source-map scss/nk.scss:stylesheet/jtb.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.49.7",
+        "nk_jtb": "file:../../../../../nk_jtb"
+    }
+}

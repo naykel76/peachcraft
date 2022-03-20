@@ -1,5 +1,4 @@
 
-
 - [ ] set up email
 - [ ] Company Details
 
@@ -37,3 +36,4 @@ Discuss the main menu and the options with relation to child items.
 ## Completed Tasks (ChangeLog)
 
 - [x] add git ignore and hide config
+- [x] create naykel template and add jtb utilities
