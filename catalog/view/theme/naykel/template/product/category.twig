@@ -78,7 +78,7 @@
 				</div>
 
 
-				<div id="product-grid" class="grid cols-4-3-2-1 gg-0">
+				<div id="product-grid" class="nk-grid nk-cols-4-3-2-1 nk-gg-0">
 
 					{% for product in products %}
 
@@ -118,14 +118,14 @@
 							</div>
 
 
-							<button type="button" class="nk-btn primary fullwidth nk-mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
+							<button type="button" class="nk-btn nk-primary nk-fullwidth nk-mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
 								<svg class="nk-icon">
 									<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
 								</svg>
 								<span>{{ button_cart }}</span>
 							</button>
-							<a class="nk-btn fullwidth nk-mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">Add to Wish List</a>
-							<a class="nk-btn fullwidth nk-mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');">Add to Compare</a>
+							<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">Add to Wish List</a>
+							<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');">Add to Compare</a>
 						</div>
 					{% endfor %}
 				</div>

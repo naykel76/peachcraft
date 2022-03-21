@@ -7,38 +7,27 @@
 @use "../node_modules/nk_jtb/scss/components/icon";
 
 // utilities
-@use "../node_modules/nk_jtb/scss/abstracts/themes";
 // @use "../node_modules/nk_jtb/scss/base";
 // @use "../node_modules/nk_jtb/scss/components";
 // @use "../node_modules/nk_jtb/scss/forms";
 // @use "../node_modules/nk_jtb/scss/layout";
-// @use "../node_modules/nk_jtb/scss/utilities/display";
-// @use "../node_modules/nk_jtb/scss/utilities/flex";
-@use "../node_modules/nk_jtb/scss/utilities/grid";
-@use "../node_modules/nk_jtb/scss/utilities/spacing";
-@use "../node_modules/nk_jtb/scss/utilities/text";
-// @use '../node_modules/nk_jtb/scss/utilities';
-@use "../node_modules/nk_jtb/scss/utilities/border";
 // @use '../node_modules/nk_jtb/scss/utilities/general';
 // @use '../node_modules/nk_jtb/scss/utilities/position';
 // @use '../node_modules/nk_jtb/scss/utilities/visibility';
+@use "../node_modules/nk_jtb/scss/abstracts/themes";
+@use "../node_modules/nk_jtb/scss/utilities/border";
+@use "../node_modules/nk_jtb/scss/utilities/display";
+@use "../node_modules/nk_jtb/scss/utilities/flex";
+@use "../node_modules/nk_jtb/scss/utilities/grid";
 @use "../node_modules/nk_jtb/scss/utilities/sizes";
-
+@use "../node_modules/nk_jtb/scss/utilities/spacing";
+@use "../node_modules/nk_jtb/scss/utilities/text";
+@use '../node_modules/nk_jtb/scss/utilities';
 
 @use "./product_layout";
 
-.fullwidth {
-	width: 100%;
-	max-width: 100%;
-}
-
-.nk-btn{
-	font-size: 0.875rem;
-	text-transform: capitalize;
-}
-
 // --------------------------------------------------------------------------
-// -- BOOTSTRAP BASE OVERRIDES --
+// -- OVERRIDES --
 // --------------------------------------------------------------------------
 
 html {
@@ -52,6 +41,18 @@ video {
 	max-width: 100%;
 	max-height: 100%; // allow set heights
 	display: block; // prevent gap at bottom
+}
+button,
+.nk-btn {
+	font-size: 0.875rem;
+	cursor: pointer;
+}
+
+// --------------------------------------------------------------------------
+// -- LOGO --
+// --------------------------------------------------------------------------
+#logo {
+	margin: 0 0 10px 0;
 }
 
 // --------------------------------------------------------------------------

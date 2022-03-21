@@ -21,7 +21,7 @@
 		<link href="catalog/view/theme/naykel/stylesheet/bootstrap.css" rel="stylesheet" media="screen"/>
 		<script src="catalog/view/theme/naykel/bootstrap/javascripts/bootstrap.min.js" type="text/javascript"></script>
 		{# <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
-		<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> #}
+												<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> #}
 		<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css"/>
 		<link href="catalog/view/theme/naykel/stylesheet/jtb.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 		{% endfor %}
 	</head>
 	<body>
-		<nav id="top">
+		{# <nav id="top">
 			<div class="container">{{ currency }}
 				{{ language }}
 				<div id="top-links" class="nav pull-right">
@@ -64,12 +64,6 @@
 									</li>
 									<li>
 										<a href="{{ order }}">{{ text_order }}</a>
-									</li>
-									<li>
-										<a href="{{ transaction }}">{{ text_transaction }}</a>
-									</li>
-									<li>
-										<a href="{{ download }}">{{ text_download }}</a>
 									</li>
 									<li>
 										<a href="{{ logout }}">{{ text_logout }}</a>
@@ -105,24 +99,46 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div id="logo">
-							{% if logo %}
-								<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive"/></a>
-							{% else %}
-								<h1>
-									<a href="{{ home }}">{{ name }}</a>
-								</h1>
-							{% endif %}
-						</div>
-					</div>
-					<div class="col-sm-5">{{ search }}</div>
-					<div class="col-sm-3">{{ cart }}</div>
+		</nav> #}
+
+		<header id="nk-header" class="nk-py">
+			<div class="container nk-flex nk-gg-2">
+				<div id="logo">
+					{% if logo %}
+						<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" /></a>
+					{% else %}
+						<h1>
+							<a href="{{ home }}">{{ name }}</a>
+						</h1>
+					{% endif %}
 				</div>
+
+				<div id="search" class="nk-fg1">{{ search }}</div>
+				{# <div id="cart">{{ cart }}</div> #}
+
+				<div class="flex nk-fg0">
+					<div class="nk-flex nk-gg-1">
+						<button type="button" class="nk-btn nk-primary nk-outline nk-flex-col">
+							<svg class="nk-icon nk-wh-2">
+								<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#phone-o"></use>
+							</svg>
+							<div>Contact</div>
+						</button>
+						<button type="button" class="nk-btn nk-primary nk-outline nk-flex-col">
+							<svg class="nk-icon nk-wh-2">
+								<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
+							</svg>
+							<div>Cart</div>
+						</button>
+						<button type="button" class="nk-btn nk-primary nk-outline nk-flex-col">
+							<svg class="nk-icon nk-wh-2">
+								<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#user-circle-o"></use>
+							</svg>
+							<div>Login</div>
+						</button>
+					</div>
+				</div>
+
 			</div>
 		</header>
 		{{ menu }}

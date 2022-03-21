@@ -1,20 +1,22 @@
 <div id="cart">
 
-		<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
-			<i class="fa fa-shopping-cart"></i>
-			<span id="cart-total">{{ text_items }}</span>
-		</button>
+	<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
+		<i class="fa fa-shopping-cart"></i>
+		<span id="cart-total">{{ text_items }}</span>
+	</button>
 
 
 	{# <button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}">
-			<svg class="icon wh-2">
-				<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
-			</svg>
-		</button> #}
+					<svg class="icon wh-2">
+						<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
+					</svg>
+				</button> #}
 
-		{# <button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}"> <svg class="icon wh-2">
+	<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}">
+		<svg class="icon wh-2">
 			<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
-		</svg> #}
+		</svg>
+		<span id="cart-total">{{ text_items }}</span>
 	</button>
 
 	<ul class="dropdown-menu pull-right">
