@@ -1164,207 +1164,207 @@ button .icon,
   margin-left: 0.5rem;
 }
 
-.primary {
+.nk-primary {
   background: #6233cd;
   border: 1px solid #6233cd;
   color: #fff;
 }
-.primary.outline:not(:hover) {
+.nk-primary.outline:not(:hover) {
   background-color: transparent;
   border-color: #6233cd;
   color: #6233cd;
 }
 
-.secondary {
+.nk-secondary {
   background: #fff4e5;
   border: 1px solid #fff4e5;
   color: #333;
 }
-.secondary.outline:not(:hover) {
+.nk-secondary.outline:not(:hover) {
   background-color: transparent;
   border-color: #fff4e5;
   color: #fff4e5;
 }
 
-.danger {
+.nk-danger {
   background: #dc3848;
   border: 1px solid #dc3848;
   color: #fff;
 }
-.danger-light {
+.nk-danger-light {
   background-color: #feecf0;
   color: #dc3848;
   border: 1px solid #dc3848;
 }
-.danger.outline:not(:hover) {
+.nk-danger.outline:not(:hover) {
   background-color: transparent;
   border-color: #dc3848;
   color: #dc3848;
 }
 
-.success {
+.nk-success {
   background: #29a847;
   border: 1px solid #29a847;
   color: #fff;
 }
-.success-light {
+.nk-success-light {
   background-color: #effaf3;
   color: #29a847;
   border: 1px solid #29a847;
 }
-.success.outline:not(:hover) {
+.nk-success.outline:not(:hover) {
   background-color: transparent;
   border-color: #29a847;
   color: #29a847;
 }
 
-.info {
+.nk-info {
   background: #249beb;
   border: 1px solid #249beb;
   color: #fff;
 }
-.info-light {
+.nk-info-light {
   background-color: #eef6fc;
   color: #249beb;
   border: 1px solid #249beb;
 }
-.info.outline:not(:hover) {
+.nk-info.outline:not(:hover) {
   background-color: transparent;
   border-color: #249beb;
   color: #249beb;
 }
 
-.warning {
+.nk-warning {
   background: #ffdd57;
   border: 1px solid #ffdd57;
   color: #333;
 }
-.warning-light {
+.nk-warning-light {
   background-color: #fffbeb;
   color: #ffdd57;
   border: 1px solid #ffdd57;
 }
-.warning.outline:not(:hover) {
+.nk-warning.outline:not(:hover) {
   background-color: transparent;
   border-color: #ffdd57;
   color: #ffdd57;
 }
 
-.white {
+.nk-white {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.red {
+.nk-red {
   background: #dc3848;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.green {
+.nk-green {
   background: #29a847;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.blue {
+.nk-blue {
   background: #249beb;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.turquoise {
+.nk-turquoise {
   background: #00d1b2;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.purple {
+.nk-purple {
   background: #6f42c2;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.darkblue {
+.nk-darkblue {
   background: #002e47;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.indigo {
+.nk-indigo {
   background: #6812f3;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.pink {
+.nk-pink {
   background: #e93f8e;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.orange {
+.nk-orange {
   background: #fd7e17;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.yellow {
+.nk-yellow {
   background: #ffdd57;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.teal {
+.nk-teal {
   background: #20cb98;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.cyan {
+.nk-cyan {
   background: #17a4ba;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.light {
+.nk-light {
   background: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.dark {
+.nk-dark {
   background: #212121;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.muted {
+.nk-muted {
   background: #877d7d;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
 }
 
-.danger-light {
+.nk-danger-light {
   background: #feecf0;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.info-light {
+.nk-info-light {
   background: #eef6fc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.success-light {
+.nk-success-light {
   background: #effaf3;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
 }
 
-.warning-light {
+.nk-warning-light {
   background: #fffbeb;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #333;
@@ -2854,6 +2854,11 @@ h1.nk-title {
 .fullwidth {
   width: 100%;
   max-width: 100%;
+}
+
+.nk-btn {
+  font-size: 0.875rem;
+  text-transform: capitalize;
 }
 
 html {
