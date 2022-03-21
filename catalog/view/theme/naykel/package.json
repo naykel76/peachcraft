@@ -7,7 +7,9 @@
         "type": "git"
     },
     "scripts": {
-        "watch": "sass --watch --no-source-map scss/nk.scss:stylesheet/jtb.css"
+        "watch": "sass --watch --no-source-map scss/nk.scss:stylesheet/jtb.css bootstrap/scss/bootstrap.scss:stylesheet/bootstrap.css",
+        "dev": "sass bootstrap/scss/bootstrap.scss:stylesheet/bootstrap.css"
+
     },
     "keywords": [],
     "author": "",

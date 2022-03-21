@@ -1,0 +1,18 @@
+@forward "../node_modules/nk_jtb/scss/base/vars_colors" with (
+    $primary: #6233cd,
+    $secondary: #fff4e5
+);
+
+@use "../node_modules/nk_jtb/scss/base/vars_colors" as *;
+
+@forward "../node_modules/nk_jtb/scss/base/vars_base" with (
+    $prefix: "nk-",
+    $base-font-size: 0.875rem
+);
+
+@use "../node_modules/nk_jtb/scss/base/vars_base" as *;
+
+@forward "../node_modules/nk_jtb/scss/base/vars_components" with (
+    $navbar-bg: $primary,
+    $navbar-padding-y: 0.5em
+);
