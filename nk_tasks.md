@@ -1,20 +1,28 @@
 
 - [ ] set up email
-- [ ] Company Details
+- [ ] deal with responsive header
+  - [ ] hide buttons ???
+- [ ] primary button hover color
+- [ ] remove unwanted functions
+- [ ] Enable child menus and style
+- [ ]
+
+- [ ] Home page (need to discuss with Sue after I add some layout examples)
+- [ ] Send details to Sue about setting up new email on devices
+
+### Final Checks
 
 - [ ] PayPal
-- [ ] Logo
-- [ ] Remove extensions
 - [ ] SEO urls
-- [ ] Favicon
+- [ ] Test contact
 - [ ] Information Pages
 - [ ] Remove payment gateways
 - [ ] review security. http://docs.opencart.com/en-gb/administration/security/
-- [ ] Create emails
-- [ ] Create users
-- [ ] Enable child menus after conversation
-- [ ] Test contact
+
 - [ ] Recaptcher
+
+
+<!--   ------------------------------------   -->
 
 ## Navigation
 - [ ] fix burger location
@@ -45,7 +53,6 @@ Do you want the category description on the product pages? I have currently remo
 ## Completed Tasks (ChangeLog)
 
 
-- [ ] remove unwanted functions
 
 - [x] add bootstrap 3.4.1 source files
 - [x] add git ignore and hide config

@@ -1,25 +1,14 @@
-<div id="cart">
+<div id="cart" class="nk-dd">
 
-	<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
-		<i class="fa fa-shopping-cart"></i>
-		<span id="cart-total">{{ text_items }}</span>
-	</button>
-
-
-	{# <button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}">
-					<svg class="icon wh-2">
-						<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
-					</svg>
-				</button> #}
-
-	<button type="button" data-toggle="dropdown" data-loading-text="{{ text_loading }}">
-		<svg class="icon wh-2">
+	<a class="nk-btn-icon">
+		<svg class="nk-icon">
 			<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
 		</svg>
-		<span id="cart-total">{{ text_items }}</span>
-	</button>
+		<div>Cart</div>
+		<div class="nk-badge">{{ text_items }}</div>
+	</a>
 
-	<ul class="dropdown-menu pull-right">
+	<ul class="nk-dd-content nk-pos-r">
 		{% if products or vouchers %}
 			<li>
 				<table class="table table-striped">

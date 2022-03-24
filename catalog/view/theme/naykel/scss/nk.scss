@@ -4,6 +4,7 @@
 // components
 @use "../node_modules/nk_jtb/scss/components/box";
 @use "../node_modules/nk_jtb/scss/components/button";
+@use "../node_modules/nk_jtb/scss/components/dropdown";
 @use "../node_modules/nk_jtb/scss/components/icon";
 
 // utilities
@@ -23,6 +24,8 @@
 @use "../node_modules/nk_jtb/scss/utilities/spacing";
 @use "../node_modules/nk_jtb/scss/utilities/text";
 @use '../node_modules/nk_jtb/scss/utilities';
+
+@use '../node_modules/nk_jtb/scss/nk_components';
 
 @use "./product_layout";
 
@@ -48,12 +51,14 @@ button,
 	cursor: pointer;
 }
 
+.nk-container{
+	width: 1170px;
+}
+
 // --------------------------------------------------------------------------
 // -- LOGO --
 // --------------------------------------------------------------------------
-#logo {
-	margin: 0 0 10px 0;
-}
+// #logo {}
 
 // --------------------------------------------------------------------------
 // -- MENU --
