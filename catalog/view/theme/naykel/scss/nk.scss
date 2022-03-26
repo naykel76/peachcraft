@@ -1,4 +1,6 @@
 @use "./nk_vars" as *;
+@use "../node_modules/nk_jtb/scss/mixins/media" as *;
+
 @use "./sorting";
 
 // components
@@ -6,6 +8,7 @@
 @use "../node_modules/nk_jtb/scss/components/button";
 @use "../node_modules/nk_jtb/scss/components/dropdown";
 @use "../node_modules/nk_jtb/scss/components/icon";
+@use "../node_modules/nk_jtb/scss/components/list";
 
 // utilities
 // @use "../node_modules/nk_jtb/scss/base";
@@ -23,11 +26,14 @@
 @use "../node_modules/nk_jtb/scss/utilities/sizes";
 @use "../node_modules/nk_jtb/scss/utilities/spacing";
 @use "../node_modules/nk_jtb/scss/utilities/text";
-@use '../node_modules/nk_jtb/scss/utilities';
+@use "../node_modules/nk_jtb/scss/utilities";
 
-@use '../node_modules/nk_jtb/scss/nk_components';
+@use "../node_modules/nk_jtb/scss/nk_components";
+@use "../node_modules/nk_jtb/scss/nk" with (
+	$header-bg: #eeebf6
+);
 
-@use "./product_layout";
+@use "./oc_components";
 
 // --------------------------------------------------------------------------
 // -- OVERRIDES --
@@ -51,14 +57,26 @@ button,
 	cursor: pointer;
 }
 
-.nk-container{
-	width: 1170px;
+tr {
+    border: 1px solid $base-border-color;
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+	.nk-container {
+		width: 1170px;
+	}
 }
 
 // --------------------------------------------------------------------------
 // -- LOGO --
 // --------------------------------------------------------------------------
-// #logo {}
 
 // --------------------------------------------------------------------------
 // -- MENU --

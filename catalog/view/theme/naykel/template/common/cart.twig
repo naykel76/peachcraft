@@ -1,17 +1,17 @@
-<div id="cart" class="nk-dd">
+<div id="cart" class="dd">
 
-	<a class="nk-btn-icon">
+	<a class="fancy-icon-button">
 		<svg class="nk-icon">
 			<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
 		</svg>
 		<div>Cart</div>
-		<div class="nk-badge">{{ text_items }}</div>
+		<div class="badge">{{ text_items }}</div>
 	</a>
 
-	<ul class="nk-dd-content nk-pos-r">
+	<ul class="lst dd-content pos-r">
 		{% if products or vouchers %}
 			<li>
-				<table class="table table-striped">
+				<table class="tbl fullwidth table-striped">
 					{% for product in products %}
 						<tr>
 							<td class="text-center">
@@ -61,11 +61,12 @@
 					{% endfor %}
 				</table>
 			</li>
-			<li>
+
+			<li class="mt">
 				<div>
-					<table class="table table-bordered">
+					<table class="ml-auto">
 						{% for total in totals %}
-							<tr>
+							<tr class="nbdr">
 								<td class="text-right">
 									<strong>{{ total.title }}</strong>
 								</td>

@@ -162,7 +162,7 @@ var cart = {
 					// Need to set timeout otherwise it wont update the total
 					// NK:OVERRIDE
 					setTimeout(function () {
-						$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="nk-badge">' + json['total'] + '</div>');
+						$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
 					}, 100);
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');
@@ -190,7 +190,7 @@ var cart = {
 			success: function(json) {
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="nk-badge">' + json['total'] + '</div>');
+					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -219,7 +219,7 @@ var cart = {
 			success: function(json) {
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="nk-badge">' + json['total'] + '</div>');
+					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -254,7 +254,7 @@ var voucher = {
 			success: function(json) {
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="nk-badge">' + json['total'] + '</div>');
+					$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {

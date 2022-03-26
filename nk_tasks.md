@@ -1,5 +1,4 @@
 
-- [ ] set up email
 - [ ] deal with responsive header
   - [ ] hide buttons ???
 - [ ] primary button hover color
@@ -10,6 +9,9 @@
 - [ ] Home page (need to discuss with Sue after I add some layout examples)
 - [ ] Send details to Sue about setting up new email on devices
 
+- [ ] remove crap from my account
+- [ ]
+
 ### Final Checks
 
 - [ ] PayPal
@@ -19,7 +21,7 @@
 - [ ] Remove payment gateways
 - [ ] review security. http://docs.opencart.com/en-gb/administration/security/
 
-- [ ] Recaptcher
+- [ ] add Recaptcher
 
 
 <!--   ------------------------------------   -->
@@ -52,6 +54,7 @@ Do you want the category description on the product pages? I have currently remo
 
 ## Completed Tasks (ChangeLog)
 
+- [x] set up email for contact page
 
 
 - [x] add bootstrap 3.4.1 source files

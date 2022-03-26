@@ -135,7 +135,7 @@
 					{% set class = 'col-sm-4' %}
 				{% endif %}
 				<div class="{{ class }}">
-					<div class="nk-bx nk-light">
+					<div class="bx light">
 
 						<h1>{{ heading_title }}</h1>
 						<ul class="list-unstyled">
@@ -323,21 +323,21 @@
 								</div>
 							{% endif %}
 
-							<div class="nk-mt">
+							<div class="mt">
 
 								<label class="control-label" for="input-quantity">{{ entry_qty }}</label>
 								<input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control"/>
 								<input type="hidden" name="product_id" value="{{ product_id }}"/>
 
-								<button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block nk-mt">
+								<button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block mt">
 									<svg class="nk-icon">
 										<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
 									</svg>
 									<span>{{ button_cart }}</span>
 								</button>
 
-								<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');">Add to Wish List</a>
-								<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product_id }}');">Add to Compare</a>
+								<a class="nk-btn fullwidth mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');">Add to Wish List</a>
+								<a class="nk-btn fullwidth mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product_id }}');">Add to Compare</a>
 
 							</div>
 

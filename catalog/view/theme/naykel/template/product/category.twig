@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-md-5 col-sm-12">
 						<div class="form-group">
-							<a href="{{ compare }}" id="compare-total" class="btn btn-link nk-px-0">{{ text_compare }}</a>
+							<a href="{{ compare }}" id="compare-total" class="btn btn-link px-0">{{ text_compare }}</a>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-6">
@@ -78,11 +78,11 @@
 				</div>
 
 
-				<div id="product-grid" class="nk-grid nk-cols-4-3-2-1 nk-gg-0">
+				<div id="product-grid" class="grid cols-4-3-2-1 gg-0">
 
 					{% for product in products %}
 
-						<div class="nk-bx flex-col nk-nbr">
+						<div class="bx flex-col nbr">
 
 							<div class="product-thumbnail">
 								<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}"/></a>
@@ -93,7 +93,7 @@
 							</div>
 
 							{% if product.price %}
-								<p class="price nk-mt">
+								<p class="price mt">
 									{% if not product.special %}
 										{{ product.price }}
 									{% else %}
@@ -102,7 +102,7 @@
 								</p>
 							{% endif %}
 
-							<div class="rating nk-my-05">
+							<div class="rating my-05">
 								{% for i in 1..5 %}
 									{% if product.rating < i %}
 										<span class="fa fa-stack">
@@ -118,19 +118,19 @@
 							</div>
 
 
-							<button type="button" class="nk-btn nk-primary nk-fullwidth nk-mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
+							<button type="button" class="nk-btn primary fullwidth mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
 								<svg class="nk-icon">
 									<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
 								</svg>
 								<span>{{ button_cart }}</span>
 							</button>
-							<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">Add to Wish List</a>
-							<a class="nk-btn nk-fullwidth nk-mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');">Add to Compare</a>
+							<a class="nk-btn fullwidth mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">Add to Wish List</a>
+							<a class="nk-btn fullwidth mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');">Add to Compare</a>
 						</div>
 					{% endfor %}
 				</div>
 
-				<div class="row nk-mt">
+				<div class="row mt">
 					<div class="col-sm-6 text-left">{{ pagination }}</div>
 					<div class="col-sm-6 text-right">{{ results }}</div>
 				</div>

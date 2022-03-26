@@ -6,7 +6,6 @@
 @use "../node_modules/nk_jtb/scss/base/vars_colors" as *;
 
 @forward "../node_modules/nk_jtb/scss/base/vars_base" with (
-    $prefix: "nk-",
     $base-font-size: 0.875rem
 );
 
@@ -15,4 +14,11 @@
 @forward "../node_modules/nk_jtb/scss/base/vars_components" with (
     $navbar-bg: $primary,
     $navbar-padding-y: 0.5em
+);
+
+@forward "../node_modules/nk_jtb/scss/base/vars_class_names" with (
+    $button-class: 'nk-btn',
+    $container-class: 'nk-container',
+    $icon-class: 'nk-icon',
+    $navbar-class: 'nk-navbar',
 );

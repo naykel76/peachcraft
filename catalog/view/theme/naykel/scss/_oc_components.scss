@@ -1,0 +1,79 @@
+@use "./nk_vars" as *;
+@use "../node_modules/nk_jtb/scss/mixins/media" as *;
+
+// --------------------------------------------------------------------------
+// -- CART --
+// --------------------------------------------------------------------------
+
+#cart {
+    // .dd-content {
+    //     min-width: 24rem;
+    //     display: block;
+    // }
+
+    @include from-tablet {
+        .dd-content {
+            min-width: 30rem;
+        }
+    }
+}
+
+// --------------------------------------------------------------------------
+// -- PRODUCT/CATEGORY LAYOUT --
+// --------------------------------------------------------------------------
+
+#product-grid {
+    // fix double border
+    > div {
+        margin-left: -1px;
+        margin-bottom: -1px;
+    }
+    .nk-btn {
+        font-size: 0.875rem;
+        text-transform: capitalize;
+    }
+
+    // cart icon
+    .nk-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.product-thumbnail {
+    height: 190px;
+}
+
+.product-title {
+    height: 40px;
+}
+
+.rating {
+    color: #ffcb05;
+    .fa-stack {
+        font-size: 0.5rem;
+    }
+}
+
+// --------------------------------------------------------------------------
+// -- SEARCH --
+// --------------------------------------------------------------------------
+
+#search {
+    .input-lg {
+        height: 40px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+    .btn-lg {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 10px 35px;
+        text-shadow: 0 1px 0 #fff;
+    }
+}

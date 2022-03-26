@@ -1,43 +1,3 @@
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	color: #666;
-	font-size: 12px;
-	line-height: 20px;
-	width: 100%;
-}
-h1, h2, h3, h4, h5, h6 {
-	color: #444;
-}
-/* default font size */
-.fa {
-	font-size: 14px;
-}
-/* Override the bootstrap defaults */
-h1 {
-	font-size: 33px;
-}
-h2 {
-	font-size: 27px;
-}
-h3 {
-	font-size: 21px;
-}
-h4 {
-	font-size: 15px;
-}
-h5 {
-	font-size: 12px;
-}
-h6 {
-	font-size: 10.2px;
-}
-// a {
-// 	color: #23a1d1;
-// }
-// a:hover {
-// 	text-decoration: none;
-// }
 legend {
 	font-size: 18px;
 	padding: 7px 0px
@@ -80,70 +40,7 @@ div.required .control-label:before {
 
 
 
-/* search */
-#search {
-	margin-bottom: 10px;
-}
-#search .input-lg {
-	height: 40px;
-	line-height: 20px;
-	padding: 0 10px;
-}
-#search .btn-lg {
-	font-size: 15px;
-	line-height: 18px;
-	padding: 10px 35px;
-	text-shadow: 0 1px 0 #FFF;
-}
-/* cart */
 
-// #cart > .btn {
-// 	font-size: 12px;
-// 	line-height: 18px;
-// 	color: #FFF;
-// }
-// #cart.open > .btn {
-// 	background-image: none;
-// 	background-color: #FFFFFF;
-// 	border: 1px solid #E6E6E6;
-// 	color: #666;
-// 	box-shadow: none;
-// 	text-shadow: none;
-// }
-// #cart.open > .btn:hover {
-// 	color: #444;
-// }
-// #cart .dropdown-menu {
-// 	background: #eee;
-// 	z-index: 1001;
-// }
-// #cart .dropdown-menu {
-// 	min-width: 100%;
-// 	overflow-y: auto;
-// 	max-height: 800px;
-// 	scrollbar-width: thin;
-// 	overflow-x: hidden;
-// }
-// @media (max-width: 478px) {
-// 	#cart .dropdown-menu {
-// 		width: 100%;
-// 	}
-// }
-// #cart .dropdown-menu table {
-// 	margin-bottom: 10px;
-// }
-// #cart .dropdown-menu li > div {
-// 	min-width: 427px;
-// 	padding: 0 10px;
-// }
-// @media (max-width: 478px) {
-// 	#cart .dropdown-menu li > div {
-// 		min-width: 100%;
-// 	}
-// }
-// #cart .dropdown-menu li p {
-// 	margin: 20px 0;
-// }
 
 /* content */
 #content {

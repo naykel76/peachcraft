@@ -41,7 +41,7 @@
 
 		<div id="top-links" class="nk-light">
 			<div class="nk-container">
-				<div class="nk-flex nk-gg-1 nk-ha-r nk-mxy-0 nk-py-05">
+				<div class="flex gg-1 ha-r mxy-0 py-05">
 					<a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}">
 						<i class="fa fa-heart"></i>
 						<span class="hidden-xs hidden-sm hidden-md">{{ text_wishlist }}</span>
@@ -58,9 +58,9 @@
 			</div>
 		</div>
 
-		<header id="nk-header" class="nk-py-2">
+		<header id="nk-header" class="py-2">
 
-			<div class="nk-container nk-flex nk-gg-2">
+			<div class="nk-container gg-3-1-1">
 
 				<div id="logo">
 					{% if logo %}
@@ -72,43 +72,40 @@
 					{% endif %}
 				</div>
 
-				<div id="search" class="nk-fg1 nk-py-05 ">{{ search }}</div>
+				{{ search }}
 
-				<div class="flex nk-fg0">
+				<div class="flex gg-1">
 
-					<div class="nk-flex nk-gg-1">
+					<a class="fancy-icon-button" href="{{ contact }}">
+						<svg class="nk-icon">
+							<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#phone-o"></use>
+						</svg>
+						<div>Contact</div>
+					</a>
 
-						<a class="nk-btn-icon" href="{{ contact }}">
+					{{ cart }}
+
+					<div class="dd">
+						<a class="fancy-icon-button" href="{{ account }}" title="{{ text_account }}">
 							<svg class="nk-icon">
-								<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#phone-o"></use>
+								<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#user-circle"></use>
 							</svg>
-							<div>Contact</div>
+							<div>{{ text_account }}</div>
 						</a>
-
-						{{ cart }}
-
-						<div class="nk-dd">
-							<a class="nk-btn-icon" href="{{ account }}" title="{{ text_account }}">
-								<svg class="nk-icon">
-									<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#user-circle"></use>
-								</svg>
-								<div>{{ text_account }}</div>
-							</a>
-							<div class="nk-dd-content nk-pos-r">
-								<nav class="flex-col">
-									{% if logged %}
-										<a class="nk-block" href="{{ account }}">{{ text_account }}</a>
-										<a class="nk-block" href="{{ order }}">{{ text_order }}</a>
-										<a class="nk-block" href="{{ logout }}">{{ text_logout }}</a>
-									{% else %}
-										<a class="nk-block" href="{{ register }}">{{ text_register }}</a>
-										<a class="nk-block" href="{{ login }}">{{ text_login }}</a>
-									{% endif %}
-								</nav>
-							</div>
+						<div class="dd-content pos-r">
+							<nav class="flex-col">
+								{% if logged %}
+									<a class="block" href="{{ account }}">{{ text_account }}</a>
+									<a class="block" href="{{ order }}">{{ text_order }}</a>
+									<a class="block" href="{{ logout }}">{{ text_logout }}</a>
+								{% else %}
+									<a class="block" href="{{ register }}">{{ text_register }}</a>
+									<a class="block" href="{{ login }}">{{ text_login }}</a>
+								{% endif %}
+							</nav>
 						</div>
-
 					</div>
+
 				</div>
 
 			</div>
