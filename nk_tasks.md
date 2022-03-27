@@ -1,3 +1,28 @@
+Menu and Sub-menu
+•	set up sub-categories and check styling
+
+Pages and Content
+Home page – I have pu
+Shipping -
+
+
+
+Nathan Pending Tasks
+•	Fix the bug in the account button dropdown that appears when not logged in.
+•	Check responsive menu and buttons on small screens.
+•	Get rid of footer links and tidy up
+•	Enable SEO urls and build sitemap
+•	Set up Add Google analytics and ReCAPTCHA with Sue
+•	Create a maintenance and backup procedure and send to Sue
+•	Check ALL product pages and make sure they are styled correctly (search, manufacturer, brands, specials)
+
+
+Add samples to home page and
+
+Home page? I have added a few example layouts to the home page
+
+
+
 ### Final Checks
 
 - [ ] SEO urls
