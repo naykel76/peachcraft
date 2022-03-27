@@ -1324,6 +1324,14 @@ button .icon,
   background: #fffcf0;
 }
 
+.bdr {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 .bdr-tb {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -3286,6 +3294,16 @@ button .icon,
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+
+.children-py-05 > * {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.children-px-1 > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .lead {

@@ -93,14 +93,18 @@
 							<div>{{ text_account }}</div>
 						</a>
 						<div class="dd-content pos-r">
-							<nav class="flex-col">
+							<nav class="flex-col children-py-05">
 								{% if logged %}
-									<a class="block" href="{{ account }}">{{ text_account }}</a>
-									<a class="block" href="{{ order }}">{{ text_order }}</a>
-									<a class="block" href="{{ logout }}">{{ text_logout }}</a>
+									<a href="{{ account }}">{{ text_account }}</a>
+									<a href="{{ edit }}">{{ text_edit }}</a>
+									<a href="{{ password }}">{{ text_password }}</a>
+									<a href="{{ address }}">{{ text_address }}</a>
+									<a href="{{ wishlist }}">{{ text_wishlist }}</a>
+									<a href="{{ order }}">{{ text_order }}</a>
+									<a href="{{ logout }}">{{ text_logout }}</a>
 								{% else %}
-									<a class="block" href="{{ register }}">{{ text_register }}</a>
-									<a class="block" href="{{ login }}">{{ text_login }}</a>
+									<a href="{{ register }}">{{ text_register }}</a>
+									<a href="{{ login }}">{{ text_login }}</a>
 								{% endif %}
 							</nav>
 						</div>
