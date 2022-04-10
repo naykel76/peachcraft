@@ -2,8 +2,6 @@ Menu and Sub-menu
 •	set up sub-categories and check styling
 
 Pages and Content
-Home page – I have pu
-Shipping -
 
 
 

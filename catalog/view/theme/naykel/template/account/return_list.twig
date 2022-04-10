@@ -1,5 +1,5 @@
 {{ header }}
-<div id="account-return" class="container">
+<main id="account-return" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
     <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -29,7 +29,7 @@
             </tr>
           </thead>
           <tbody>
-          
+
           {% for return in returns %}
           <tr>
             <td class="text-right">#{{ return.return_id }}</td>
@@ -41,7 +41,7 @@
           </tr>
           {% endfor %}
             </tbody>
-          
+
         </table>
       </div>
       <div class="row">
@@ -56,5 +56,5 @@
       </div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>
-</div>
-{{ footer }} 
+</main>
+{{ footer }}

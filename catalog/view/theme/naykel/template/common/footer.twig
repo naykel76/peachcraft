@@ -1,60 +1,47 @@
-<footer>
-	<div class="container">
-		<div class="row">
+<footer id="nk-footer">
+
+
+	<div class="container py-2">
+		<div class="grid cols-4-2-1">
+
+
 			{% if informations %}
-				<div class="col-sm-3">
-					<h5>{{ text_information }}</h5>
-					<ul class="list-unstyled">
-						{% for information in informations %}
-							<li>
-								<a href="{{ information.href }}">{{ information.title }}</a>
-							</li>
-						{% endfor %}
-					</ul>
-				</div>
+				<nav class="flex-col children-py-025">
+					<div class="bx-title mb-05">{{ text_information }}</div>
+					{% for information in informations %}
+						<a href="{{ information.href }}">{{ information.title }}</a>
+					{% endfor %}
+					<a href="{{ sitemap }}">{{ text_sitemap }}</a>
+
+				</nav>
 			{% endif %}
-			<div class="col-sm-3">
-				<h5>{{ text_service }}</h5>
-				<ul class="list-unstyled">
-					<li>
-						<a href="{{ contact }}">{{ text_contact }}</a>
-					</li>
-					<li>
-						<a href="{{ sitemap }}">{{ text_sitemap }}</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<h5>{{ text_extra }}</h5>
-				<ul class="list-unstyled">
-					<li>
-						<a href="{{ manufacturer }}">{{ text_manufacturer }}</a>
-					</li>
-					<li>
-						<a href="{{ special }}">{{ text_special }}</a>
-					</li>
-				</ul>
-			</div>
-			<div
-				class="col-sm-3">
-				{# <h5>{{ text_account }}</h5> #}
-				<ul
-					class="list-unstyled">{# <li><a href="{{ account }}">{{ text_account }}</a></li>
-						          <li><a href="{{ order }}">{{ text_order }}</a></li>
-						          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-						          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li> #}
-				</ul>
-			</div>
+			<nav class="flex-col children-py-025">
+				<div class="bx-title mb-05">{{ text_extra }}</div>
+				<a href="{{ manufacturer }}">{{ text_manufacturer }}</a>
+				<a href="{{ special }}">{{ text_special }}</a>
+			</nav>
+			<nav class="flex-col children-py-025">
+				<div class="bx-title mb-05">{{ text_account }}</div>
+				<a href="{{ account }}">{{ text_account }}</a>
+				<a href="{{ order }}">{{ text_order }}</a>
+				<a href="{{ wishlist }}">{{ text_wishlist }}</a>
+			</nav>
+			<nav class="flex-col children-py-025">
+				<div class="bx-title mb-05">CONNECT</div>
+				<a href="{{ contact }}">{{ text_contact }}</a>
+				<a class="mt-05" href="https://www.facebook.com/PeachCraftglass" target="blank">
+					<svg class="nk-icon wh-2">
+						<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#facebook-round"></use>
+					</svg>
+				</a>
+			</nav>
 		</div>
+	</div>
+	<div class="container">
 		<hr>
 		<p>{{ powered }}</p>
-		{# <p>Powered By <a href="http://www.opencart.com">OpenCart</a><br> PeachCraft © 2022</p> #}
-
 	</div>
-</footer>
-{% for style in styles %}
-	<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>
-{% endfor %}
-{% for script in scripts %}
-	<script src="{{ script }}" type="text/javascript"></script>
-{% endfor %}</body></html>
+
+</div></footer>{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>{% endfor %}{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>{% endfor %}</body></html>

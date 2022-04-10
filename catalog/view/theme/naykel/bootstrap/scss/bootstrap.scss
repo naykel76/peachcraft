@@ -8,11 +8,28 @@
 
 $navbar-border-radius: 0;
 
-// $btn-default-color: #333 !default;
-// $btn-default-bg: #fff !default;
-// $btn-default-border: #ccc !default;
-
 $btn-primary-bg: $primary;
+
+// $dropdown-bg: $primary-light;
+// $dropdown-bg: #fff;
+// $dropdown-border: red;
+// $dropdown-divider-bg: green;
+// $dropdown-fallback-border: green;
+// $dropdown-header-color: yellow;
+// $dropdown-link-active-bg: yellow;
+// $dropdown-link-active-color: yellow;
+// $dropdown-link-color: blue;
+// $dropdown-link-disabled-color: pink;
+// $dropdown-link-hover-bg: green;
+// $dropdown-link-hover-color: darken(blue, 5%);
+
+// .dropdown-menu li > a:hover {
+// 	text-decoration: none;
+// 	color: #ffffff;
+// 	background-color: #229ac8;
+// 	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+// 	background-repeat: repeat-x;
+// }
 
 // Core variables and mixins
 @import "bootstrap/variables";

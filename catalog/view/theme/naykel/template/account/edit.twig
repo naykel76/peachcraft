@@ -1,5 +1,5 @@
 {{ header }}
-<div id="account-edit" class="container">
+<main id="account-edit" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
     <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -219,7 +219,7 @@
       </form>
       {{ content_bottom }}</div>
     {{ column_right }}</div>
-</div>
+</main>
 <script type="text/javascript"><!--
 // Sort the custom fields
 $('.form-group[data-sort]').detach().each(function() {

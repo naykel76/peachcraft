@@ -21,5 +21,8 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES ('1', 
 INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES ('1', '0', '0');
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES ('1', '0');
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES ('1', 'nk123abc', '', '', '', '', '', '', '', '1', '6', 'catalog/nk/naykel-400-004.png', '0', '1', '27.8500', '0', '0', '2022-04-06', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '0', '2022-04-06 20:07:20', '2022-04-06 20:07:20');
-INSERT INTO `oc_translation` (`translation_id`, `store_id`, `language_id`, `route`, `key`, `value`, `date_added`) VALUES ('1', '0', '1', 'common/cart', 'text_items', '%s', '2022-04-06 20:33:18');
 
+TRUNCATE TABLE `oc_translation`;
+
+INSERT INTO `oc_translation` (`translation_id`, `store_id`, `language_id`, `route`, `key`, `value`, `date_added`) VALUES ('1', '0', '1', 'common/cart', 'text_items', '%s', '2022-04-06 20:33:18');
+INSERT INTO `oc_translation` (`translation_id`, `store_id`, `language_id`, `route`, `key`, `value`, `date_added`) VALUES ('2', '0', '1', 'common/footer', 'text_powered', '%s &amp;copy; %s', '2022-04-10 04:13:48');
