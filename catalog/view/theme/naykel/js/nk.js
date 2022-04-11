@@ -162,7 +162,7 @@ var cart = {
 					// Need to set timeout otherwise it wont update the total
 					// NK:OVERRIDE
 					setTimeout(function () {
-						$('#cart > a').html('<svg class="nk-icon"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
+						$('#cart > a').html('<svg class="nk-icon txt-green"><use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use></svg><div>Cart</div><div class="badge">' + json['total'] + '</div>');
 					}, 100);
 
 					$('html, body').animate({ scrollTop: 0 }, 'slow');

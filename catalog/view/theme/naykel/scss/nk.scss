@@ -10,15 +10,12 @@
 @use "../node_modules/nk_jtb/scss/components/icon";
 @use "../node_modules/nk_jtb/scss/components/list";
 
-// utilities
-// @use "../node_modules/nk_jtb/scss/base";
-// @use "../node_modules/nk_jtb/scss/components";
-// @use "../node_modules/nk_jtb/scss/forms";
-// @use "../node_modules/nk_jtb/scss/layout";
-@use "../node_modules/nk_jtb/scss/utilities/general";
-// @use '../node_modules/nk_jtb/scss/utilities/position';
-// @use '../node_modules/nk_jtb/scss/utilities/visibility';
 @use "../node_modules/nk_jtb/scss/abstracts/themes";
+
+// utilities
+@use "../node_modules/nk_jtb/scss/utilities/general";
+@use '../node_modules/nk_jtb/scss/utilities/position';
+// @use '../node_modules/nk_jtb/scss/utilities/visibility';
 @use "../node_modules/nk_jtb/scss/utilities/border";
 @use "../node_modules/nk_jtb/scss/utilities/display";
 @use "../node_modules/nk_jtb/scss/utilities/flex";
@@ -181,9 +178,6 @@ td {
 	}
 }
 @media (max-width: 767px) {
-	#menu {
-		border-radius: 4px;
-	}
 	#menu div.dropdown-inner > ul.list-unstyled {
 		display: block;
 	}

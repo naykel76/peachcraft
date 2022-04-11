@@ -1,0 +1,96 @@
+{% if products %}
+	<div class="row">
+		<div class="col-md-5 col-sm-12">
+			<div class="form-group">
+				<a href="{{ compare }}" id="compare-total" class="btn btn-link px-0">{{ text_compare }}</a>
+			</div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+			<div class="form-group input-group input-group-sm">
+				<label class="input-group-addon" for="input-sort">{{ text_sort }}</label>
+				<select id="input-sort" class="form-control" onchange="location = this.value;">
+					{% for sorts in sorts %}
+						{% if sorts.value == '%s-%s'|format(sort, order) %}
+							<option value="{{ sorts.href }}" selected="selected">{{ sorts.text }}</option>
+						{% else %}
+							<option value="{{ sorts.href }}">{{ sorts.text }}</option>
+						{% endif %}
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<div class="form-group input-group input-group-sm">
+				<label class="input-group-addon" for="input-limit">{{ text_limit }}</label>
+				<select id="input-limit" class="form-control" onchange="location = this.value;">
+					{% for limits in limits %}
+						{% if limits.value == limit %}
+							<option value="{{ limits.href }}" selected="selected">{{ limits.text }}</option>
+						{% else %}
+							<option value="{{ limits.href }}">{{ limits.text }}</option>
+						{% endif %}
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="product-grid" class="grid cols-4-3-2-1 gg-0">
+
+		{% for product in products %}
+
+			<div class="bx flex-col nbr">
+
+				<div class="product-thumbnail">
+					<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}"/></a>
+				</div>
+
+				<div class="product-title">
+					<a href="{{ product.href }}">{{ product.name }}</a>
+				</div>
+
+				{% if product.price %}
+					<p class="price mt">
+						{% if not product.special %}
+							{{ product.price }}
+						{% else %}
+							{{ product.special }}
+						{% endif %}
+					</p>
+				{% endif %}
+
+				<div class="rating my-05">
+					{% for i in 1..5 %}
+						{% if product.rating < i %}
+							<span class="fa fa-stack">
+								<i class="fa fa-star-o fa-stack-2x"></i>
+							</span>
+						{% else %}
+							<span class="fa fa-stack">
+								<i class="fa fa-star fa-stack-2x"></i>
+								<i class="fa fa-star-o fa-stack-2x"></i>
+							</span>
+						{% endif %}
+					{% endfor %}
+				</div>
+
+				<button type="button" class="nk-btn primary fullwidth mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
+					<svg class="nk-icon">
+						<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
+					</svg>
+					<span>{{ button_cart }}</span>
+				</button>
+
+				<a class="nk-btn fullwidth mt-05" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">Add to Wish List</a>
+				<a class="nk-btn fullwidth mt-05" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');">Add to Compare</a>
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="row mt">
+		<div class="col-sm-6 text-left">{{ pagination }}</div>
+		<div class="col-sm-6 text-right">{{ results }}</div>
+	</div>
+
+{% endif %}

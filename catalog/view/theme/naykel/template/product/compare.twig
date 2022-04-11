@@ -1,5 +1,5 @@
 {{ header }}
-<div id="product-compare" class="container">
+<main id="product-compare" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
     <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -89,7 +89,7 @@
           <td>{{ product.length }} x {{ product.width }} x {{ product.height }}</td>
           {% endfor %} </tr>
           </tbody>
-        
+
         {% for attribute_group in attribute_groups %}
         <thead>
           <tr>
@@ -126,5 +126,5 @@
       {% endif %}
       {{ content_bottom }}</div>
     {{ column_right }}</div>
-</div>
-{{ footer }} 
+</main>
+{{ footer }}

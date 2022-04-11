@@ -1,7 +1,5 @@
 {{ header }}
-
-<main id="product-category" class="container">
-
+<main class="container">
 	<ul class="breadcrumb">
 		{% for breadcrumb in breadcrumbs %}
 			<li>
@@ -9,9 +7,7 @@
 			</li>
 		{% endfor %}
 	</ul>
-
 	<h1 class="nk-title">{{ heading_title }}</h1>
-
 	{% if thumb or description %}
 		<div class="row">
 			{% if thumb %}
@@ -23,11 +19,7 @@
 		</div>
 		<hr>
 	{% endif %}
-
-	<div class="row">
-
-		{{ column_left }}
-
+	<div class="row">{{ column_left }}
 		{% if column_left and column_right %}
 			{% set class = 'col-sm-6' %}
 		{% elseif column_left or column_right %}
@@ -35,11 +27,7 @@
 		{% else %}
 			{% set class = 'col-sm-12' %}
 		{% endif %}
-
-		<div id="content" class="{{ class }}">
-
-			{{ content_top }}
-
+		<div id="content" class="{{ class }}">{{ content_top }}
 			{% if products %}
 				<div class="row">
 					<div class="col-md-5 col-sm-12">
@@ -76,33 +64,28 @@
 						</div>
 					</div>
 				</div>
-
-
 				<div id="product-grid" class="grid cols-4-3-2-1 gg-0">
-
 					{% for product in products %}
-
 						<div class="bx flex-col nbr">
-
 							<div class="product-thumbnail">
 								<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}"/></a>
 							</div>
-
 							<div class="product-title">
 								<a href="{{ product.href }}">{{ product.name }}</a>
 							</div>
-
 							{% if product.price %}
-								<p class="price mt">
+								<p class="price my-025">
 									{% if not product.special %}
 										{{ product.price }}
 									{% else %}
-										{{ product.special }}
+										<small>
+											<span class="price-new fw-4 txt-strike">{{ product.special }}</span>
+										</small>
+										<span class="price-old txt-red">{{ product.price }}</span>
 									{% endif %}
 								</p>
 							{% endif %}
-
-							<div class="rating my-05">
+							<div class="rating my-025">
 								{% for i in 1..5 %}
 									{% if product.rating < i %}
 										<span class="fa fa-stack">
@@ -116,8 +99,6 @@
 									{% endif %}
 								{% endfor %}
 							</div>
-
-
 							<button type="button" class="nk-btn primary fullwidth mt-05" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
 								<svg class="nk-icon">
 									<use xlink:href="catalog/view/theme/naykel/svg/naykel-ui-SVG-sprite.svg#cart"></use>
@@ -129,21 +110,15 @@
 						</div>
 					{% endfor %}
 				</div>
-
 				<div class="row mt">
 					<div class="col-sm-6 text-left">{{ pagination }}</div>
 					<div class="col-sm-6 text-right">{{ results }}</div>
 				</div>
-
 			{% endif %}
-
 			{% if not categories and not products %}
 				<p>{{ text_empty }}</p>
 			{% endif %}
-
-			{{ content_bottom }}
-		</div>
-		{{ column_right }}
-	</div>
+			{{ content_bottom }}</div>
+		{{ column_right }}</div>
 </main>
 {{ footer }}
