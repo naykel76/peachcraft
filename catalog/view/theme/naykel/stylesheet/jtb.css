@@ -448,7 +448,7 @@ html[dir=rtl] #cart .dropdown-menu {
 }
 
 .bx.secondary {
-  background: #fff4e5;
+  background: #f0d8b7;
   color: #333;
 }
 
@@ -761,15 +761,15 @@ button .icon,
 }
 
 .nk-btn.secondary {
-  background: #fff4e5;
+  background: #f0d8b7;
   color: #333;
 }
 .nk-btn.secondary:hover {
-  background-color: #ffebd1;
+  background-color: #eccfa6;
   color: #333;
 }
 .nk-btn.secondary:active {
-  background-color: white;
+  background-color: #f6e8d5;
   color: #333;
 }
 
@@ -984,14 +984,14 @@ button .icon,
 }
 
 .secondary {
-  background: #fff4e5;
-  border: 1px solid #fff4e5;
+  background: #f0d8b7;
+  border: 1px solid #f0d8b7;
   color: #333;
 }
 .secondary.outline:not(:hover) {
   background-color: transparent;
-  border-color: #fff4e5;
-  color: #fff4e5;
+  border-color: #f0d8b7;
+  color: #f0d8b7;
 }
 
 .danger {
@@ -3300,6 +3300,10 @@ h1.title {
   text-decoration: overline;
 }
 
+.txt-underline-overline {
+  text-decoration: underline overline;
+}
+
 .fancy-icon-button {
   text-align: center;
   position: relative;
@@ -3469,7 +3473,7 @@ h1.title {
 }
 
 body {
-  background: #fff4e5;
+  background: #f0d8b7;
 }
 
 main {
